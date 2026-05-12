@@ -41,5 +41,6 @@ if __name__ == "__main__":
     test_id = get_products()[0]['id']
     enriched_test = enrich_product_data(test_id)
     result = get_claude_results(enriched_test)
-    print(type(result))
+    #print(type(result))
+    print(result)
     print(result['completeness_score'])
